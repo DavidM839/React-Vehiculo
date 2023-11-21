@@ -9,18 +9,13 @@ function Navbar() {
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/Cliente">Cliente</Link>
+              <Link className="nav-link" to="/Cliente">Clientes</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Cuenta">Cuenta</Link>
+              <Link className="nav-link" to="/Vehiculo">Vehiculos</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Transaccion">Transaccion</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/GraficoDepositos">GraficoDepositos</Link>
-            </li><li className="nav-item">
-              <Link className="nav-link" to="/GraficoRetiros">GraficoRetiros</Link>
+              <Link className="nav-link" to="/Venta">Ventas</Link>
             </li>
           </ul>
         </div>
