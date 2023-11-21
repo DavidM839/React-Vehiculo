@@ -201,11 +201,36 @@ peticionDelete = () => {
                         <input className="form-control" type="text" name="precio" onChange={this.handleChange} value={vehiculoSeleccionado ? vehiculoSeleccionado.precio : ''} />
                         <br />
                         <label htmlFor="tipoVehiculo">Tipo de Vehiculo</label>
-                        <input className="form-control" type="text" name="tipoVehiculo" onChange={this.handleChange} value={vehiculoSeleccionado ? vehiculoSeleccionado.tipoVehiculo : ''} />
-                        <br />
-                        <label htmlFor="estado">Estado</label>
-                        <input className="form-control" type="text" name="estado" onChange={this.handleChange} value={vehiculoSeleccionado ? vehiculoSeleccionado.estado : ''} />
-                        <br />
+      <select
+        className="form-control"
+        name="tipoVehiculo"
+        onChange={this.handleChange}
+        value={vehiculoSeleccionado ? vehiculoSeleccionado.tipoVehiculo : ''}
+      >
+        <option value="">Seleccionar tipo de vehículo</option>
+        <option value="Vehiculo Standar">Vehiculo Standar</option>
+        <option value="Camioneta">Camioneta</option>
+        <option value="Autobus">Autobus</option>
+        <option value="Ban">Ban</option>
+        <option value="Motocicleta">Motocicleta</option>
+        <option value="Deportivo">Deportivo</option>
+        <option value="Trailer">Trailer</option>
+        {/* Agrega aquí cualquier otro tipo de vehículo */}
+      </select>
+      <br />
+      <label htmlFor="estado">Estado</label>
+      <select
+        className="form-control"
+        name="estado"
+        onChange={this.handleChange}
+        value={vehiculoSeleccionado ? vehiculoSeleccionado.estado : ''}
+      >
+        <option value="">Seleccionar estado</option>
+        <option value="nuevo">Nuevo</option>
+        <option value="usado">Usado</option>
+        <option value="semi-nuevo">Semi-nuevo</option>
+      </select>
+      <br />
                     </div>
                 </ModalBody>
                 <ModalFooter>
@@ -239,11 +264,35 @@ peticionDelete = () => {
                         <input className="form-control" type="text" name="precio" onChange={this.handleChange} value={form ? form.precio : ''} />
                         <br />
                         <label htmlFor="tipoVehiculo">Tipo de Vehiculo</label>
-                        <input className="form-control" type="text" name="tipoVehiculo" onChange={this.handleChange} value={form ? form.tipoVehiculo : ''} />
-                        <br />
-                        <label htmlFor="estado">Estado</label>
-                        <input className="form-control" type="text" name="estado" onChange={this.handleChange} value={form ? form.estado : ''} />
-                        <br />
+      <select
+        className="form-control"
+        name="tipoVehiculo"
+        onChange={this.handleChange}
+        value={form ? form.tipoVehiculo : ''}
+      >
+        <option value="">Seleccionar tipo de vehículo</option>
+        <option value="Vehiculo Standar">Vehiculo Standar</option>
+        <option value="Camioneta">Camioneta</option>
+        <option value="Autobus">Autobus</option>
+        <option value="Ban">Ban</option>
+        <option value="Motocicleta">Motocicleta</option>
+        <option value="Deportivo">Deportivo</option>
+        <option value="Trailer">Trailer</option>
+        {/* Agrega aquí cualquier otro tipo de vehículo */}
+      </select>
+      <br />
+      <label htmlFor="estado">Estado</label>
+      <select
+        className="form-control"
+        name="estado"
+        onChange={this.handleChange}
+        value={form ? form.estado : ''}
+      >
+        <option value="">Seleccionar estado</option>
+        <option value="nuevo">Nuevo</option>
+        <option value="usado">Usado</option>
+        <option value="semi-nuevo">Semi-nuevo</option>
+      </select>
                     </div>
                 </ModalBody>
                 <ModalFooter>

@@ -20,7 +20,7 @@ class ClienteCrud extends Component {
             CorreoElectronico: '',
             Telefono: '',
             Direccion: '',
-            IDVehiculo: '', 
+            DUI: '', 
         },
         clientesSeleccionados: null,
     };
@@ -75,7 +75,7 @@ class ClienteCrud extends Component {
                 CorreoElectronico: cliente.CorreoElectronico,
                 Telefono: cliente.Telefono,
                 Direccion: cliente.Direccion,
-                IDVehiculo: cliente.IDVehiculo, 
+                DUI: cliente.DUI, 
             }
         });
     }
@@ -141,7 +141,7 @@ class ClienteCrud extends Component {
                             <th>Correo Electrónico</th>
                             <th>Teléfono</th>
                             <th>Dirección</th>
-                            <th>ID Vehiculo</th> 
+                            <th>NO DUI</th> 
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -154,7 +154,7 @@ class ClienteCrud extends Component {
                                     <td>{cliente.CorreoElectronico}</td>
                                     <td>{cliente.Telefono}</td>
                                     <td>{cliente.Direccion}</td>
-                                    <td>{cliente.IDVehiculo}</td> 
+                                    <td>{cliente.DUI}</td>
                                     <td>
                                         <button className="btn btn-primary" onClick={() => this.seleccionarClienteParaEditar(cliente)}> <FontAwesomeIcon icon={faEdit} /></button>
                                         {"   "}
@@ -189,8 +189,8 @@ class ClienteCrud extends Component {
                             <label htmlFor="Direccion">Dirección</label>
                             <input className="form-control" type="text" name="Direccion" onChange={this.handleChange} value={clientesSeleccionados ? clientesSeleccionados.Direccion : ''} />
                             <br />
-                            <label htmlFor="IDVehiculo">ID Vehiculo</label> {/* Cambia el nombre del campo a "IDCliente" */}
-                            <input className="form-control" type="text" name="IDVehiculo" onChange={this.handleChange} value={clientesSeleccionados ? clientesSeleccionados.IDVehiculo : ''} /> {/* Cambia el nombre del campo a "IDCliente" */}
+                            <label htmlFor="DUI">NO DUI</label> {/* Cambia el nombre del campo a "IDCliente" */}
+                            <input className="form-control" type="text" name="DUI" onChange={this.handleChange} value={clientesSeleccionados ? clientesSeleccionados.DUI : ''} /> {/* Cambia el nombre del campo a "IDCliente" */}
                         </div>
                     </ModalBody>
                     <ModalFooter>
@@ -223,8 +223,8 @@ class ClienteCrud extends Component {
                             <label htmlFor="Direccion">Dirección</label>
                             <input className="form-control" type="text" name="Direccion" onChange={this.handleChange} value={form ? form.Direccion : ''} />
                             <br />
-                            <label htmlFor="IDVehiculo">ID Vehiculo</label> {/* Cambia el nombre del campo a "IDCliente" */}
-                            <input className="form-control" type="text" name="IDVehiculo" onChange={this.handleChange} value={form ? form.IDVehiculo : ''} /> {/* Cambia el nombre del campo a "IDCliente" */}
+                            <label htmlFor="DUI">NO DUI</label> {/* Cambia el nombre del campo a "IDCliente" */}
+                            <input className="form-control" type="text" name="DUI" onChange={this.handleChange} value={form ? form.DUI : ''} /> {/* Cambia el nombre del campo a "IDCliente" */}
                         </div>
                     </ModalBody>
                     <ModalFooter>

@@ -28,7 +28,7 @@ const HomePage = () => {
               <img src="/img/img2.png" className="img-fluid mb-3" alt="Descripción del vehículo 2" />
             </div>
             <div className="col-md-4">
-              <img src="/img/img3.png" className="img-fluid mb-3" alt="Descripción del vehículo 3" />
+              <img src="/img/img4.jpg" className="img-fluid mb-3" alt="Descripción del vehículo 3" />
             </div>
           </div>
         </section>
