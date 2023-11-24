@@ -232,15 +232,15 @@ handleVehiculoChange = (e) => {
                     </ModalHeader>
                     <ModalBody>
                         <div className="form-group">
-                            <label htmlFor="id">ID</label>
+                            <label htmlFor="id" >ID</label>
                             <input className="form-control" type="text" name="id" id="id" readOnly value={ventasSeleccionadas ? ventasSeleccionadas.id : ''} />
                             <br />
-                            <label htmlFor="IDVehiculo">ID Vehículo</label>
-                            <input className="form-control" type="text" name="IDVehiculo" readOnly onChange={this.handleChange} value={ventasSeleccionadas ? ventasSeleccionadas.IDVehiculo : ''} />
-                            <br />
-                            <label htmlFor="IDCliente">ID Cliente</label>
-                            <input className="form-control" type="text" name="IDCliente" readOnly onChange={this.handleChange} value={ventasSeleccionadas ? ventasSeleccionadas.IDCliente : ''} />
-                            <br />
+                            
+                            <input className="form-control" type="hidden" name="IDVehiculo" readOnly onChange={this.handleChange} value={ventasSeleccionadas ? ventasSeleccionadas.IDVehiculo : ''} />
+                            
+                           
+                            <input className="form-control" type="hidden" name="IDCliente" readOnly onChange={this.handleChange} value={ventasSeleccionadas ? ventasSeleccionadas.IDCliente : ''} />
+                            
                             <label htmlFor="nombre">Nombre del Cliente</label>
                     <select
                         className="form-control"
@@ -322,12 +322,12 @@ handleVehiculoChange = (e) => {
                             <label htmlFor="id">ID</label>
                             <input className="form-control" type="text" name="id" id="id" readOnly onChange={this.handleChange} value={form ? form.id : this.state.data.length + 1} />
                             <br />
-                            <label htmlFor="IDVehiculo">ID Vehículo</label>
-                            <input className="form-control" type="text" name="IDVehiculo" readOnly onChange={this.handleChange} value={form ? form.IDVehiculo : ''} />
-                            <br />
-                            <label htmlFor="IDCliente">ID Cliente</label>
-                            <input className="form-control" type="text" name="IDCliente" readOnly onChange={this.handleChange} value={form ? form.IDCliente : ''} />
-                            <br />
+                            
+                            <input className="form-control" type="hidden" name="IDVehiculo" readOnly onChange={this.handleChange} value={form ? form.IDVehiculo : ''} />
+                          
+                           
+                            <input className="form-control" type="hidden" name="IDCliente" readOnly onChange={this.handleChange} value={form ? form.IDCliente : ''} />
+                            
                             <label htmlFor="nombre">Nombre del Cliente</label>
                     <select
                         className="form-control"

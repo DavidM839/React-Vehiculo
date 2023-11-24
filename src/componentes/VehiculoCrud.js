@@ -186,7 +186,7 @@ peticionDelete = () => {
                 <ModalBody>
                     <div className="form-group">
                         <label htmlFor="id">ID</label>
-                        <input className="form-control" type="text" name="id" id="id" readOnly value={vehiculoSeleccionado ? vehiculoSeleccionado.id : ''}  />
+                        <input className="form-control" type="hiden" name="id" id="id" readOnly value={vehiculoSeleccionado ? vehiculoSeleccionado.id : ''}  />
                         <br />
                         <label htmlFor="marca">Marca</label>
                         <input className="form-control" type="text" name="marca" onChange={this.handleChange } value={vehiculoSeleccionado ? vehiculoSeleccionado.marca : ''}  />

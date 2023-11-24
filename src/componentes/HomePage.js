@@ -8,6 +8,20 @@ const HomePage = () => {
         <p className="lead">donde podrás encontrar una amplia selección de vehículos segun tus gustos y tus necesidades.</p>
       </header>
       <main>
+        <section className="images text-center mb-5">
+          <div className="row">
+            <div className="col-md-4">
+              <img src="/img/img1.jpg" className="img-fluid mb-3" alt="Descripción del vehículo 1" />
+            </div>
+            <div className="col-md-4">
+              <img src="/img/img2.jpg" className="img-fluid mb-3" alt="Descripción del vehículo 2" />
+            </div>
+            <div className="col-md-4">
+              <img src="/img/img3.jpg" className="img-fluid mb-3" alt="Descripción del vehículo 3" />
+            </div>
+          </div>
+        </section>
+
         <section className="about mb-5">
           <h2 className="text-center mb-4">Sobre Nosotros</h2>
           <p className="text-center">
@@ -19,19 +33,7 @@ const HomePage = () => {
             Nos esforzamos por ser tu mejor aliado en la adquisición de tu próximo vehículo.
           </p>
         </section>
-        <section className="images text-center mb-5">
-          <div className="row">
-            <div className="col-md-4">
-              <img src="/img/img1.png" className="img-fluid mb-3" alt="Descripción del vehículo 1" />
-            </div>
-            <div className="col-md-4">
-              <img src="/img/img2.png" className="img-fluid mb-3" alt="Descripción del vehículo 2" />
-            </div>
-            <div className="col-md-4">
-              <img src="/img/img4.jpg" className="img-fluid mb-3" alt="Descripción del vehículo 3" />
-            </div>
-          </div>
-        </section>
+        
       </main>
       <footer className="text-center">
         <p>¡Síguenos en nuestras redes sociales para conocer nuestras últimas ofertas y novedades!</p>
